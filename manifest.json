@@ -1,0 +1,14 @@
+{
+    "name": "Rot-Y",
+    "description": "Rotate Any Youtube Video Like You Want",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/watch?v=*"],
+            "js": ["main.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
