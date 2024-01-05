@@ -7,7 +7,7 @@ function Set(Value){
 
 document.addEventListener('keyup', event => {
   if(event.code === 'NumpadMultiply'){
-    Input = prompt("Enter Degree");
+    Input = prompt("Enter The Rotation Degree");
     Set(Input);
   }
 })
