@@ -1,13 +1,14 @@
-const Element = document.querySelector(".html5-video-player .video-click-tracking, .html5-video-player .video-stream");
+const Element = document.querySelector(".video-stream");
 
 function Set(Value){
-    if(isNaN(Number(Value))) return;
-    Element.style.rotate = Value + "deg";
+  Value = Number(Value);
+  Condition = !isNaN(Value);
+  if(Condition) Element.style.rotate = Value + "deg";
 }
 
 document.addEventListener('keyup', event => {
-    if (event.code === 'NumpadMultiply') {
-        Input = prompt("Enter Degree");
-        Set(Input);
-    }
+  if(event.code === 'NumpadMultiply'){
+    Input = prompt("Enter Degree");
+    Set(Input);
+  }
 })
